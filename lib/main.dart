@@ -20,18 +20,14 @@ class MyApp extends StatelessWidget {
         ),
         body: SafeArea(
           child: Align(
-            alignment: Alignment.topCenter,
+            alignment: Alignment.center,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const SizedBox(height: 30),
-
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 60,
-                  backgroundImage: const AssetImage(
-                    'assets/images/profile.jpg',
-                  ),
+                  backgroundImage: AssetImage('assets/images/profile.jpg'),
                 ),
                 const SizedBox(height: 20),
 
@@ -48,24 +44,55 @@ class MyApp extends StatelessWidget {
 
                 const Text(
                   'UX/UI DESIGNER',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontFamily: 'SourceSans3',
                     fontSize: 18,
                     letterSpacing: 3,
                     color: Color(0xFFB2DFDB),
-                    fontWeight: FontWeight.w500,
                   ),
                 ),
-                const SizedBox(height: 25),
+                const SizedBox(height: 12),
 
-                const Divider(
-                  color: Colors.white70,
-                  thickness: 1,
-                  indent: 40,
-                  endIndent: 40,
+                const SizedBox(
+                  width: 150,
+                  child: Divider(color: Colors.white70, thickness: 1),
                 ),
 
-                const SizedBox(height: 25),
+                const SizedBox(height: 12),
+
+                const Card(
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(horizontal: 25),
+                  child: ListTile(
+                    leading: Icon(Icons.phone, color: Colors.teal),
+                    title: Text(
+                      '+1 (202) 555-0147',
+                      style: TextStyle(
+                        fontFamily: 'SourceSans3',
+                        fontSize: 18,
+                        color: Color(0xFF004D40),
+                      ),
+                    ),
+                  ),
+                ),
+
+                const SizedBox(height: 15),
+
+                const Card(
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(horizontal: 25),
+                  child: ListTile(
+                    leading: Icon(Icons.email, color: Colors.teal),
+                    title: Text(
+                      'esandi.design@example.com',
+                      style: TextStyle(
+                        fontFamily: 'SourceSans3',
+                        fontSize: 18,
+                        color: Color(0xFF004D40),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
