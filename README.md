@@ -1,17 +1,75 @@
-# business_card
+# Digital Business Card
 
-A digital business card built with Flutter.
+A simple digital business card application developed using Flutter and Dart.
 
-## Getting Started
+The application presents a personal profile with a photograph, name, professional title, and contact information in a clean, single-screen layout.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- Personal profile photograph displayed in a circular avatar.
+- Custom fonts using Pacifico and Source Sans 3.
+- Personal name and professional title.
+- Phone number contact card.
+- Email address contact card.
+- Custom teal background and styled layout.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## App Screenshot
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="screenshots/business-card.png" alt="Digital Business Card" width="300">
+
+## Technologies Used
+
+- **Flutter** – Cross-platform UI framework.
+- **Dart** – Programming language.
+- **Material Design** – UI components and layout.
+- **Android Studio** – Development environment.
+
+## Project Structure
+
+```text
+business_card/
+├── assets/
+│   ├── fonts/
+│   │   ├── Pacifico-Regular.ttf
+│   │   └── SourceSans3-Regular.ttf
+│   └── images/
+│       └── profile.jpg
+├── lib/
+│   └── main.dart
+├── test/
+│   └── widget_test.dart
+├── pubspec.yaml
+└── README.md
+```
+
+## Running the Application
+
+1. Clone this repository.
+2. Open the project in Android Studio.
+3. Run the following command to install dependencies:
+
+```bash
+flutter pub get
+```
+
+4. Start an Android emulator or connect an Android device.
+5. Run the application:
+
+```bash
+flutter run
+```
+
+## Running Tests
+
+Run the widget test using:
+
+```bash
+flutter test
+```
+
+The test verifies that the business card displays the expected name, professional title, phone number, and email address.
+
+## Author
+
+**Esandi Arambepola**  
+E298750
